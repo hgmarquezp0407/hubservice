@@ -1,0 +1,22 @@
+NEXT_PUBLIC_API=http://192.168.X.X:8000/v1
+# NEXT_PUBLIC_API=http://sigit.sunat.gob.pe:8000/v1    # Descomentar si usas dominio interno
+
+NEXT_PUBLIC_TENANT_API=192.168.X.X:8000/v1
+# NEXT_PUBLIC_TENANT_API=sigit.sunat.gob.pe:8000/v1   # Descomentar si usas dominio interno
+
+NEXT_PUBLIC_FILES_API=192.168.X.X:8000
+# NEXT_PUBLIC_FILES_API=sigit.sunat.gob.pe:8000        # Descomentar si usas dominio interno
+
+NODE_ENV=production
+NEXT_PUBLIC_PROTOCOL=http
+
+NEXT_PUBLIC_MAIN_DOMAIN=192.168.X.X:3000
+# NEXT_PUBLIC_MAIN_DOMAIN=sigit.sunat.gob.pe           # Descomentar si usas dominio interno
+
+ADMIN_SUBDOMAIN=admin
+
+COOKIE_SAMESITE=lax
+ACCESS_TOKEN_EXPIRE_MINUTES=600
+
+NEXT_PUBLIC_ITEMS_PER_PAGE=15
+NEXT_PUBLIC_BASE_PATH="sigit"

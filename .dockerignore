@@ -1,0 +1,22 @@
+# Python
+venv3/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Node
+node_modules/
+.next/
+.nuxt/
+dist/
+build/
+
+# Git
+.git/
+.gitignore
+
+# Logs y temporales
+*.log
+*.tmp
+.env.local
