@@ -42,6 +42,11 @@ export async function POST(
         const apiUrl = process.env.INTERNAL_API || process.env.NEXT_PUBLIC_API;
         const loginUrl = `${apiUrl}/admin/auth/token`;
 
+        // 👇 AGREGA ESTO TEMPORALMENTE
+        console.log("apiUrl:", apiUrl);
+        console.log("loginUrl:", loginUrl);
+        console.log("username:", username);
+
         // 1. Autenticar contra el backend
         const response = await fetch(loginUrl, {
             method:  "POST",
