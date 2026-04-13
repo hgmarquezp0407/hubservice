@@ -1,4 +1,4 @@
-// PRODUCTION //
+// PRODUCTION
 
 module.exports = {
   apps: [{

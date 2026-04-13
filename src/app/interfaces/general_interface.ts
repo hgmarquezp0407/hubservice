@@ -8,18 +8,6 @@ export interface SelectOption {
 //     name: string;
 // }
 
-export interface IConfig {
-    company_name       : string | null;
-    company_ruc        : string | null;
-    company_address    : string | null;
-    company_phone      : string | null;
-    company_email      : string | null;
-    company_district   : string | null;
-    company_province   : string | null;
-    company_department : string | null;
-    url_logo           : string | null; 
-}
-
 export interface SelectOptionNumber {
     value: number;
     label: string;
@@ -624,12 +612,6 @@ export interface IBidStatus {
     name : string;
 }
 
-export interface IBidTicket {
-    id            : string;
-    ticket_number : string;
-    title         : string;
-}
-
 export interface IBids {
     id                 : string;
     ticket_id          : string;
@@ -642,7 +624,6 @@ export interface IBids {
     created_at         : string;
     status             : IBidStatus | null;
     specialist         : IBidSpecialist | null;
-    ticket             : IBidTicket | null;
 }
 
 export interface IBid {
@@ -651,75 +632,4 @@ export interface IBid {
     estimated_hours    : number | null;
     proposal           : string;
     expires_at         : string;
-}
-
-
-export interface IPaymentStatus {
-    id   : string;
-    name : string;
-}
-
-export interface IPaymentInvoice {
-    id    : string;
-    serie : string | null;
-    voucher_number : number | null;
-}
-
-export interface IPayments {
-    id                : string;
-    invoice_id        : string;
-    cash_register_id  : number;
-    gateway           : string;
-    gateway_tx_id     : string | null;
-    card_type_id      : string | null;
-    bank_account_id   : number | null;
-    amount            : number;
-    currency_id       : string;
-    exchange_rate_id  : number | null;
-    gateway_response  : any | null;
-    error_message     : string | null;
-    created_at        : string;
-    updated_at        : string;
-    payment_status_id : string;
-    status            : IPaymentStatus;
-    invoice           : IPaymentInvoice | null;
-}
-
-export interface IPayoutStatus {
-    id   : string;
-    name : string;
-}
-
-export interface IPayoutSpecialist {
-    id        : string;
-    person_id : string;
-    person    : IBidPerson;
-}
-
-export interface IPayouts {
-    id                  : string;
-    contract_id         : string;
-    specialist_id       : string;
-    invoice_id          : string;
-    gross_amount        : number;
-    platform_fee        : number;
-    net_amount          : number;
-    retention_usd       : number;
-    net_after_retention : number | null;
-    document_type_id    : string | null;
-    document_number     : string | null;
-    currency_id         : string;
-    exchange_rate_id    : number | null;
-    bank_account_id     : number | null;
-    gateway             : string | null;
-    gateway_tx_id       : string | null;
-    gateway_response    : any | null;
-    payout_status_id    : string;
-    scheduled_at        : string | null;
-    paid_at             : string | null;
-    error_message       : string | null;
-    created_at          : string;
-    updated_at          : string;
-    status              : IPayoutStatus;
-    specialist          : IPayoutSpecialist | null;
 }

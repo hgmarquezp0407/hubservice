@@ -202,9 +202,9 @@ export default function Companies() {
                                             </Link>
                                         </div>
 
-                                        {/* <SpkButton Buttonvariant="primary" Size="sm" Customclass="waves-light">
+                                        <SpkButton Buttonvariant="primary" Size="sm" Customclass="waves-light">
                                             <i className="ri-add-line fw-medium align-middle me-1"></i> Nueva empresa
-                                        </SpkButton> */}
+                                        </SpkButton>
                                     </div>
                                 </Card.Header>
                             </Card>

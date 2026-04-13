@@ -56,12 +56,11 @@ export const MENUITEMS: any = [
   },
   { path: "/admin/companies", icon: Icons, type: "link", active: false, selected: false, title: "EMPRESAS" },
   { path: "/admin/specialists", icon: UserIcon, type: "link", active: false, selected: false, title: "ESPECIALISTAS" },
-  { path: "/admin/cashes", icon: MoneyIcon, type: "link", active: false, selected: false, title: "CAJA" },
   { path: "/admin/tickets", icon: Appsicon, type: "link", active: false, selected: false, title: "TICKETS" },
   { path: "/admin/bids", icon: Pagesicon, type: "link", active: false, selected: false, title: "PROPUESTAS" },
   { path: "/admin/contracts", icon: Inventoryicon, type: "link", active: false, selected: false, title: "CONTRATOS" },
   { path: "/admin/orders", icon: Inventoryicon, type: "link", active: false, selected: false, title: "ÓRDENES" },
-  { path: "/admin/invoices", icon: MoneyIcon, type: "link", active: false, selected: false, title: "FACTURAS" },
+  { path: "/admin/sales", icon: MoneyIcon, type: "link", active: false, selected: false, title: "VENTAS" },
   {
     title: "SERVICIOS", icon: Advanceuiicon, type: "sub", active: false, selected: false, children: [
       { path: "/admin/services", type: "link", active: false, selected: false, title: "Servicios" },
@@ -80,12 +79,12 @@ export const MENUITEMS: any = [
     title: "PAGOS", icon: MoneyIcon, type: "sub", active: false, selected: false, children: [
       { path: "/admin/payments", type: "link", active: false, selected: false, title: "Pagos" },
       { path: "/admin/payouts", type: "link", active: false, selected: false, title: "Desembolsos" },
-      // {
-      //   title: "Comisiones", type: "sub", menusub: true, active: false, selected: false, children: [
-      //     { path: "/commissions", type: "link", active: false, selected: false, title: "Vendedores" },
-      //     { path: "/incentives", type: "link", active: false, selected: false, title: "Productos" },
-      //   ],
-      // },
+      {
+        title: "Comisiones", type: "sub", menusub: true, active: false, selected: false, children: [
+          { path: "/commissions", type: "link", active: false, selected: false, title: "Vendedores" },
+          { path: "/incentives", type: "link", active: false, selected: false, title: "Productos" },
+        ],
+      },
     ],
   },
   { path: "/cpanel/admin/plans", title: "Planes", icon: Icons, type: "link", active: false, selected: false },
@@ -109,25 +108,4 @@ export const MENUITEMS: any = [
       { path: "/admin/roles", type: "link", active: false, selected: false, title: "Roles" },
     ]
   },
-]
-
-
-export const MENUITEMSCOMPANY: any = [
-  { path: "/company/home", icon: Homeicon, type: "link", active: false, selected: false, title: "INICIO" },
-  { path: "/company/tickets", icon: Appsicon, type: "link", active: false, selected: false, title: "TICKETS" },
-  { path: "/company/bids", icon: Pagesicon, type: "link", active: false, selected: false, title: "PROPUESTAS" },
-  { path: "/company/contracts", icon: Inventoryicon, type: "link", active: false, selected: false, title: "CONTRATOS" },
-  { path: "/company/orders", icon: Inventoryicon, type: "link", active: false, selected: false, title: "ÓRDENES" },
-  { path: "/company/invoices", icon: MoneyIcon, type: "link", active: false, selected: false, title: "FACTURAS" },
-  // { path: "/company/payments", icon: MoneyIcon, type: "link", active: false, selected: false, title: "PAGOS" },
-]
-
-
-export const MENUITEMSSPECIALIST: any = [
-  { path: "/specialist/marketplace", icon: Homeicon, type: "link", active: false, selected: false, title: "MARKETPLACE" },
-  { path: "/specialist/tickets", icon: Appsicon, type: "link", active: false, selected: false, title: "TICKETS" },
-  { path: "/specialist/bids", icon: Pagesicon, type: "link", active: false, selected: false, title: "PROPUESTAS" },
-  { path: "/specialist/contracts", icon: Inventoryicon, type: "link", active: false, selected: false, title: "CONTRATOS" },
-  { path: "/specialist/invoices", icon: MoneyIcon, type: "link", active: false, selected: false, title: "FACTURAS" },
-  { path: "/specialist/payouts", icon: MoneyIcon, type: "link", active: false, selected: false, title: "PAGOS RECIBIDOS" },
 ]

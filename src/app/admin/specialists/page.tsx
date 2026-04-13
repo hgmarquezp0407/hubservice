@@ -228,9 +228,9 @@ export default function Specialists() {
                                                 <i className="ti ti-search"></i>
                                             </Link>
                                         </div>
-                                        {/* <SpkButton Buttonvariant="primary" Size="sm" Customclass="waves-light">
+                                        <SpkButton Buttonvariant="primary" Size="sm" Customclass="waves-light">
                                             <i className="ri-add-line fw-medium align-middle me-1"></i> Nuevo
-                                        </SpkButton> */}
+                                        </SpkButton>
                                     </div>
                                 </Card.Header>
                             </Card>
